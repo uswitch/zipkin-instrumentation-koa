@@ -1,0 +1,52 @@
+{
+  "_args": [
+    [
+      "git+https://github.com/zeev-kell/zipkin-instrumentation-koa.git",
+      "/Users/david.annez/projects/uswitch/comparison-web"
+    ]
+  ],
+  "_from": "git+https://github.com/zeev-kell/zipkin-instrumentation-koa.git",
+  "_id": "zipkin-instrumentation-koa@git+https://github.com/zeev-kell/zipkin-instrumentation-koa.git#6d967baa1afbc96954739bce6772edc2442029f7",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/zipkin-instrumentation-koa",
+  "_phantomChildren": {
+    "base64-js": "1.3.0",
+    "chai": "4.2.0",
+    "encoding": "0.1.12",
+    "is-promise": "2.1.0",
+    "is-stream": "1.1.0",
+    "network-address": "1.1.2"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/zeev-kell/zipkin-instrumentation-koa.git",
+    "rawSpec": "git+https://github.com/zeev-kell/zipkin-instrumentation-koa.git",
+    "saveSpec": "git+https://github.com/zeev-kell/zipkin-instrumentation-koa.git",
+    "fetchSpec": "https://github.com/zeev-kell/zipkin-instrumentation-koa.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/zeev-kell/zipkin-instrumentation-koa.git#6d967baa1afbc96954739bce6772edc2442029f7",
+  "_spec": "git+https://github.com/zeev-kell/zipkin-instrumentation-koa.git",
+  "_where": "/Users/david.annez/projects/uswitch/comparison-web",
+  "author": {
+    "name": "keziyuan"
+  },
+  "dependencies": {
+    "koa2-cors": "2.0.5",
+    "zipkin": "0.12.0",
+    "zipkin-transport-http": "0.12.0"
+  },
+  "description": "```javascript const serviceName = 'backend' const {KoaInstrumentation} = require('zipkin-instrumentation-koa') const tracer = require('zipkin-instrumentation-koa/src/recorder')({   endpoint: 'http://127.0.0.1:9411',   serviceName }); const Koa = require('koa') const app = new Koa() app.use(KoaInstrumentation({tracer, serviceName})) ```",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "zipkin-instrumentation-koa",
+  "repository": {
+    "type": "git",
+    "url": "git@git.bgionline.cn:keziyuan/zipkin-instrumentation-koa.git"
+  },
+  "version": "1.0.0"
+}
