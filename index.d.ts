@@ -1,1 +1,1 @@
-export function KoaInstrumentation()
+export function KoaInstrumentation(): any
