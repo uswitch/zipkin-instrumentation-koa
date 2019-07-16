@@ -48,5 +48,5 @@
     "type": "git",
     "url": "git@git.bgionline.cn:keziyuan/zipkin-instrumentation-koa.git"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
