@@ -2,11 +2,11 @@ const {HttpHeaders, TraceId, option: {Some, None}, Annotation} = require('zipkin
 const lib = require('./lib');
 module.exports = function ({tracer = false, serviceName = 'unknown', port = 0}) {
   if (tracer === false) {
-    return async (ctx, next) => {
+    return async function koaInstrumentation(ctx, next) {
       await next()
     }
   }
-  return async (ctx, next) => {
+  return async function koaInstrumentation(ctx, next) {
     // 忽略 OPTIONS 的记录
     if (ctx.method.toUpperCase() === 'OPTIONS') {
       return await next()
