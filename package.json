@@ -36,7 +36,7 @@
     "name": "keziyuan"
   },
   "dependencies": {
-    "koa2-cors": "2.0.5",
+    "koa2-cors": "2.0.6",
     "zipkin": "^0.18.4",
     "zipkin-transport-http": "^0.18.4"
   },
